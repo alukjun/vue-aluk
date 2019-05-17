@@ -1,0 +1,147 @@
+@import '../../node_modules/element-ui/lib/theme-chalk/index.css';
+@import './skin/var';
+@import './sass/index';
+
+/*index css*/
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+div {
+    outline: none;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    .el-container {
+        height: 100%;
+    }
+    .infoArea {
+        word-wrap: break-word;
+    }
+    .el-table .cell {
+        word-wrap: break-word !important;
+        word-break: normal;
+        min-height: 25px;
+    }
+    .app-menu .el-submenu__title {
+        padding: 0 8px !important;
+    }
+    .cell i {
+        font-size: 18px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    .cell i:first-child {
+        margin-left: 0px;
+    }
+    /*login*/
+    .welcomePage {
+        .welcome {
+            margin: 100px auto 50px;
+            text-align: center
+        }
+        .loginContainer {
+            width: 500px;
+            margin: 50px auto 0;
+        }
+        .tips {
+            text-align: center;
+            color: gray;
+            font-size: 12px;
+        }
+    }
+    /*welcomePage*/
+    .hello {
+        h1,
+        h2 {
+            font-weight: normal;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        a {
+            color: #42b983;
+        }
+    }
+}
+
+
+/*layout*/
+
+.el-aside {
+    color: #333;
+}
+
+.app-menu {
+    position: fixed;
+    z-index: 3;
+    .el-menu-vertical {
+        /*border-right:0;*/
+        &:not(.el-menu--collapse) {
+            width: 173px;
+        }
+    }
+    .el-submenu {
+        .el-menu-item {
+            min-width: auto;
+        }
+    }
+}
+
+.app-container {
+    width: 100%;
+    min-width: 1000px;
+    margin-left: 173px;
+    &.expand {
+        margin-left: 64px;
+        header {
+            width: calc(100% - 64px);
+        }
+    }
+    header {
+        position: fixed;
+        width: calc(100% - 161px);
+        top: 0;
+        background: #ffffff;
+        z-index: 2;
+    }
+    main {
+        position: relative;
+        margin-top: 95px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+
+.el-popover {
+    width: 125px !important;
+    li {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        cursor: pointer;
+    }
+}
+
+
+/*layout components*/

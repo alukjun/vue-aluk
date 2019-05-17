@@ -1,0 +1,50 @@
+{
+  "name": "aluk",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build --mode development",
+    "build-sit": "vue-cli-service build --mode sit",
+    "build-uat": "vue-cli-service build --mode uat",
+    "build-sandbox": "vue-cli-service build --mode sandbox",
+    "build-prop": "vue-cli-service build --mode prop",
+    "lint": "vue-cli-service lint",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "element-ui": "^2.6.1",
+    "vant": "^1.6.13",
+    "vue": "^2.6.6",
+    "vue-axios": "^2.1.4",
+    "vue-i18n": "^8.11.2",
+    "vue-router": "^3.0.1",
+    "vue-simple-uploader": "^0.7.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.4.1",
+    "@vue/cli-plugin-e2e-cypress": "^3.4.1",
+    "@vue/cli-plugin-eslint": "^3.4.1",
+    "@vue/cli-plugin-unit-mocha": "^3.4.1",
+    "@vue/cli-service": "^3.4.1",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.1.2",
+    "compression-webpack-plugin": "^1.1.11",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "image-webpack-loader": "^4.6.0",
+    "node-sass": "^4.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "vue-template-compiler": "^2.5.21",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
